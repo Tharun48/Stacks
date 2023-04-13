@@ -20,5 +20,15 @@ class Solution {
     }
 }
 
+class Main {
+      public static void main(String args[]) {
+            Solution s = new Solution();
+            int pushed[] = {1,2,3,4,5};
+            int poped[] = {4,5,3,2,1};
+            System.out.println(s.validateStackSequences(pushed,poped));
+      }
+}
+
 //Tc -> O(N) + O(N) 
 //Sc -> O(N) 
+// can use pushed array as the stack to remove the space complexity
